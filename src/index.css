@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body {
+  -webkit-tap-highlight-color: transparent;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  font-family: -apple-system, BlinkMacSystemFont, "Trebuchet MS", Roboto, Ubuntu, sans-serif;
+}
+
+.market-card {
+  box-shadow: 0 1px 3px rgba(19, 23, 34, 0.05);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+.market-card:hover {
+  border-color: #b2b5be;
+}
+.market-card:active {
+  transform: scale(0.98);
+}
+
+@keyframes priceFlashGreen {
+  0% { background-color: rgba(8, 153, 129, 0.25); }
+  100% { background-color: transparent; }
+}
+
+@keyframes priceFlashRed {
+  0% { background-color: rgba(242, 54, 69, 0.25); }
+  100% { background-color: transparent; }
+}
+
+.flash-up {
+  animation: priceFlashGreen 0.8s ease-out;
+}
+
+.flash-down {
+  animation: priceFlashRed 0.8s ease-out;
+}

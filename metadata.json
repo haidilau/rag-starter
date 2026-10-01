@@ -1,0 +1,6 @@
+{
+  "name": "TradingView Markets",
+  "description": "Live global markets, world indices, stocks, crypto, forex, interactive charts, and real-time watchlists.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
